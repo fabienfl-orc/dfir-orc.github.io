@@ -121,7 +121,7 @@ Attributes
         Describes the method to upload the files. Currently only "filecopy" (uses SMB) or "BITS" are allowed values.
 * **server** *(optional=no, default=N/A)*
         Specifies the server name (e.g. `file://servername` or `http://servername`, or `https://servername`) when using BITS or SMB.
-* **path** *(optional=no, default= / or \\ depending on the method)*
+* **path** *(optional=yes, default='/' or '\\' depending on the method (BITS, ...))*
         Specifies the file share or folder for the upload 
 * **user** *(optional=yes, default=the current user (executing DFIR ORC))*
         Specifies the user name to be used to connect to the remote server.
